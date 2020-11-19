@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import styles from './WeatherApi.module.scss';
 import WeatherCardList from '../WeatherCardList';
 
@@ -23,8 +23,10 @@ const WeatherApi = (props) => {
 
 	return (
 		<>
-			<h1>Weathers of the World</h1>
-			<WeatherCardList weather={weather} />
+		<section className={styles.weatherapi}>
+				<h1>Weathers of the World</h1>
+				<WeatherCardList weather={weather} />
+				</section>
 		</>
 	);
 };

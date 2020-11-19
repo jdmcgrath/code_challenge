@@ -25,12 +25,14 @@ const answerChecker = () => {
 const OneQuestionQuiz = () => {
 	return (
 		<>
-			<h1>One Question Quiz</h1>
-			<h2>What is Joe's favourite food?</h2>
-			<form action="">
-				<input type="text" id="guess" />
-				<input type="submit" onClick={answerChecker} />
-			</form>
+					<section className={styles.quiz}>
+						<h1>One Question Quiz</h1>
+						<h2>What is Joe's favourite food?</h2>
+						<form className={styles.form}>
+							<input className="textbox" type="text" id="guess" />
+							<input className="submit" type="submit" onClick={answerChecker} />
+						</form>
+			</section>
 		</>
 	);
 };

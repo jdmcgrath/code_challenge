@@ -1,7 +1,11 @@
 nav {
+	position: absolute;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: pink;
+	top: 0;
 	a {
 		margin: 20px;
 	}
